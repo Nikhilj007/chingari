@@ -1,0 +1,87 @@
+.earn{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-top: 5rem;
+    margin-bottom: 13rem;
+}
+
+.earnHead{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.earnHead>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+
+.earnHead>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.earnHead>:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 2rem;
+}
+.earnHead>:nth-child(4){
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 2rem;
+}
+
+.s-button{
+    width: 8rem;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+.cards{
+    position: relative;
+   
+}
+.cards>*{
+    position:absolute;
+}
+
+.s-blur2{
+    left: 14rem;
+    top: 8rem;
+    z-index: -1;
+}
+
+.s-blur1{
+    top:13rem;
+    left: -18rem;
+    z-index: -9;
+}
+
+@media screen and (max-width:480px){
+    .earn{
+        position: absolute;
+        top: 75rem;
+        flex-direction: column;
+    }
+    .cards{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 18rem;
+    }
+    .cards>*{
+        position: static;
+    }
+    .s-blur1 ,.s-blur2{
+        transform: scale(0);
+    }
+    .cards>img{
+        width: 20%;
+    }
+}

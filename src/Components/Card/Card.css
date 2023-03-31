@@ -1,0 +1,23 @@
+.card{
+    width: 10rem;
+    height: 13rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255,255,255,0.26);
+    gap: 1rem;
+    border: 7px solid var(--orangeCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.card>*{
+    background: transparent;
+}
+
+.card>:nth-child(3){
+    font-size: 14px;
+}
